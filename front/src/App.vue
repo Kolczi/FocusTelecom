@@ -5,6 +5,24 @@
 </template>
 
 <style>
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .window {
   width: 800px;
   height: 500px;
@@ -14,7 +32,7 @@
   bottom: 0;
   left: 0;
   margin: auto;
-  background: rgb(255, 204, 0);
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   box-sizing: border-box;
   padding: 20px;
@@ -22,6 +40,7 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
 .clearfix:after {
   content: "";
   clear: both;
@@ -73,9 +92,7 @@
   font-size: 22px;
   font-weight: 600;
   line-height: 75px;
-  background: #008000;
   cursor: pointer;
-  color: #fff;
   border-radius: 20px;
   margin: 0 auto;
 }
@@ -87,7 +104,45 @@
   filter: brightness(80%);
 }
 .error {
+  font-size: large;
   border: 1px solid #ff0000;
   background: rgb(255, 170, 170);
+}
+.btn {
+  position: relative;
+  padding: 0;
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91c9ff;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #4f95da;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
 }
 </style>

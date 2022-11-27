@@ -1,0 +1,11 @@
+{
+  "useFakeApi": true,
+  "dialerCredentials": {
+    "url": <dialer_url>",
+    "login": "<login>",
+    "password": "<password>"
+  },
+  "port": 3000,
+  "fakeApiNumber":"555555555",
+  "myNumber": "<real_phone_number>"
+}

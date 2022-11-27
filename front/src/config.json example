@@ -1,0 +1,4 @@
+{
+  "baseUrl": "<your backend url>",
+  "port":8080
+}
