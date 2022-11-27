@@ -24,7 +24,6 @@ Still in /backend directory, run
 
 ```
 node ./index.js
-
 ```
 
 ## Frontend preparation
