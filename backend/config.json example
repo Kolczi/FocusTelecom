@@ -1,7 +1,9 @@
 {
+  //True if you want to test dialer api wihout making calls.
+  //In that case you can leave dialerCredentials and myNumber unchanged.
   "useFakeApi": true,
   "dialerCredentials": {
-    "url": <dialer_url>",
+    "url": "<dialer_url>",
     "login": "<login>",
     "password": "<password>"
   },
