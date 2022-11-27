@@ -16,7 +16,7 @@ Install all the dependencies
 npm install
 ```
 
-Create config.json file in backend folder and fill it acording to config.json example
+Create config.json file in /backend folder and fill it acording to config.json example
 
 ## Running backend
 
@@ -41,7 +41,7 @@ Install all the dependencies
 npm install
 ```
 
-Create config.json file in backend folder and fill it acording to config.json example
+Create config.json file in /front/src folder and fill it acording to config.json example
 
 ## Running frontend
 
