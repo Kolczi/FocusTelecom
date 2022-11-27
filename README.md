@@ -49,3 +49,6 @@ Still in /front directory, run
 ```
 npm run serve
 ```
+
+## Final step
+Upon completion of previous steps, open [frontend app](http://localhost:8080/) in your browser
